@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: white;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            background-image: url(https://img.freepik.com/free-psd/interior-modern-emergency-room-with-empty-nurses-station-generative-ai_587448-2137.jpg);
+            background-size: 110%;
+        }
+        .topic {
+            color: black;
+            font-size:xx-large;
+            font-family: cursive;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: lightskyblue;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: khaki;
+        }
+        form {
+            border: 10px dashed black;
+            border-width: 5px;
+            padding: 20px;
+            color: whitesmoke;
+            width: 500px;
+            height: 570px;
+            border-radius: 20px;
+            margin-left: 30rem;
+            margin-top: 0px;
+            background-color: rgba(0, 35, 51, 0.633);
+            font-size: larger;
+        }
+        form h2 {
+            color: lightcyan;
+            text-align: center;
+        }
+        input[type=submit] {
+            color: black;
+            background-color: yellow;
+            width: 100px;
+            height: 25px;
+            font-size: large;
+            cursor: pointer;
+        }
+        textarea {
+            border-radius: 10px;
+            text-align: center;
+        }
+        #salute {
+            width: 45px;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Form submitted!");
+        }
+        function showAlert1() {
+            confirm("Redirecting to Home page.")
+        }
+        function showAlert2() {
+            confirm("Know about Us.")
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topic">MEDICO HOSPITAL</div>
+            <div>
+                <ul>
+                    <li><a href="home_project.html" onclick="showAlert1()">Home</a></li>
+                    <li><a href="aboutus_project.html" onclick="showAlert2()">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <form action="submit_form" method="post" onsubmit="showAlert()">
+        <h2>Appointment Booking</h2>
+        <br>
+        <label><script>alert("Fill your details as per your adhaar.")</script>
+            <b>First-Name:</b>&nbsp;&nbsp;
+            <select id="salute">
+               <option value="mr.">Mr.</option>
+                <option value="mrs.">Mrs.</option>
+                <option value="dr.">Dr.</option>
+                <option value="er.">Er.</option>
+                <option value="shri">Shri</option>
+                <option value="shrimati">Shrimati</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text">
+        </label><br><br>
+        <label><b>Last-Name:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text">
+        <br><br>
+        <label>
+            <b>Age:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number">
+        </label><br><br>
+        <label><b>From:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date">&nbsp;&nbsp; <i>time</i>: <input type="time">
+        <br><br>
+        <label><b>To:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date">&nbsp;&nbsp; <i>time</i>: <input type="time">
+        <br><br>
+        <label>
+            <b>Doctor:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+                <option value="Nikil">Nikil Kumar Yadav</option>
+                <option value="Ankit">Ankit Kumar</option>
+                <option value="Praveen">Praveen Kumar Yadav</option>
+                <option value="Caleb">Caleb Pathi</option>
+                <option value="Sanjeet">Sanjeet Pandit</option>
+                <option value="Amit">Amit Kumar</option>
+            </select>
+            <br><br>
+        <label>
+            <b>Related:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+                <option value="eye disease">Eye</option>
+                <option value="ear disease">Ear</option>
+                <option value="skin disease">Skin</option>
+                <option value="bone disease">Bone</option>
+                <option value="heart disease">Heart</option>
+                <option value="abdomen disease">Abdomen</option>
+            </select>
+        </label><br><br>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea rows="10" cols="25">write your problem in detail</textarea><br>
+        </label>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Submit">
+        </label>
+    </form><br><br><br><br><br><hr><br><br>
+    <p>
+        <footer style="display: flex; text-align: center; color: black;">© Copyright 2023. Medico Hospitals Group. All Rights Reserved.<br>Toll free no.:- 1800 123 9675</footer>
+    </p><br><br>
+</body>
+</html>
